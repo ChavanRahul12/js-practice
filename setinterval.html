@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<div id="abc">0</div>
+	<script type="text/javascript">
+		var i = 1;
+		var stopincrement = setInterval(function () {
+			document.getElementById('abc').innerHTML = i;
+			i++;
+
+			if (i == 101) {
+				clearInterval(stopincrement);
+			}
+		}, 10);
+
+	</script>
+</body>
+
+</html>

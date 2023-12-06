@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 10px;
+            width: 10px;
+            float: left;
+            background-color:black;
+        }
+       
+    </style>
+</head>
+<body>
+    <script>
+        for(var i=1;i<=10000;i++)
+        {
+            document.write("<div class='box' onmouseover='change(this)'></div>");
+        }
+
+        function change(elmt)
+        {
+            elmt.style.backgroundColor="yellow";
+
+            setTimeout(function(){
+                elmt.style.backgroundColor="orange";
+            },1000)
+
+            setTimeout(function(){
+                elmt.style.backgroundColor="green";
+            },2000)
+
+            setTimeout(function(){
+                elmt.style.backgroundColor="pink";
+            },3000)
+
+            setTimeout(function(){
+                elmt.style.backgroundColor="black";
+            },4000)
+        }
+    </script>
+</body>
+</html>

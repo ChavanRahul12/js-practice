@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            margin-left: 200px;
+            margin-top: 300px;
+            /* transition: 1s; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <i class="fa fa-angle-right" style="font-size: 25px;" id="angle" onclick="rotate()"></i>
+    </div>
+    <script>
+        function rotate() {
+            document.getElementById('angle').style.rotate = "90deg";
+        }
+    </script>
+</body>
+
+</html>

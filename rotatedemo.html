@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        .box
+        {
+            height: 400px;
+            width: 100%;
+            float: left;
+        }
+        .inbox
+        {
+            height: 100%;
+            width: 24%;
+            float:left;
+        }
+        .item
+        {
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin-top: 40px;
+            margin-left: 100px;
+            position: relative;
+            border: 4px solid black;
+            border-radius: 25px;
+            transition: 2s;
+        }
+        .item:hover
+        {
+            transform: rotate(360deg);
+            border-color:yellow;
+            border-radius:0px;
+        }
+        img
+        {
+          height: 95%;
+          width: 95%;
+          float:center;
+          position: relative;
+          border: 3px solid black;
+          border-radius: 25px;
+
+        }
+        #one
+        {
+            margin-top: 30px;
+            height: 15%;
+            width: 100%;
+            color: orange;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+        }
+        #two
+        {
+            margin-top: 30px;
+            height: 15%;
+            width: 100%;
+            color: orange;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+        }
+        #three
+        {
+            margin-top: 30px;
+            height: 15%;
+            width: 100%;
+            color: orange;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+        }
+        #four
+        {
+            margin-top: 30px;
+            height: 15%;
+            width: 100%;
+            color: orange;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+        }
+    .p_name
+    {
+        height: 20%;
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+       color: red;
+    }
+    .p_name h1 
+    {
+        font-size: 35px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <div class="inbox">
+        <div class="item">
+           <img src="https://images.deliveryhero.io/image/fd-tr/LH/e8c3-hero.jpg" alt="">
+        </div>
+        <div id="one">0</div>
+        <div class="p_name">
+            <h1>Pizza</h1>
+        </div>
+    </div>
+
+    <div class="inbox">
+        <div class="item">
+           <img src="https://images.deliveryhero.io/image/fd-tr/LH/e8c3-hero.jpg" alt="">
+        </div>
+        <div id="two">0</div>
+        <div class="p_name">
+            <h1>Pizza</h1>
+        </div>
+    </div>
+
+    <div class="inbox">
+        <div class="item">
+           <img src="https://images.deliveryhero.io/image/fd-tr/LH/e8c3-hero.jpg" alt="">
+        </div>
+        <div id="three">0</div>
+        <div class="p_name">
+            <h1>Pizza</h1>
+        </div>
+    </div>
+
+    <div class="inbox">
+        <div class="item">
+           <img src="https://images.deliveryhero.io/image/fd-tr/LH/e8c3-hero.jpg" alt="">
+        </div>
+        <div id="four">0</div>
+        <div class="p_name">
+            <h1>Pizza</h1>
+        </div>
+    </div>
+   </div>
+   
+
+   <script>
+    var a=0;
+    var stopincrement=setInterval(function()
+  {
+      document.getElementById('one').innerHTML=a;
+      a++;
+
+      if(a==101)
+      {
+          clearInterval(stopincrement);
+      }
+  },50);
+
+  var b=0;
+    var stopincremen=setInterval(function()
+  {
+      document.getElementById('two').innerHTML=b;
+      b++;
+
+      if(b==81)
+      {
+          clearInterval(stopincremen);
+      }
+  },70);
+
+  var c=0;
+    var stopincreme=setInterval(function()
+  {
+      document.getElementById('three').innerHTML=c;
+      c++;
+
+      if(c==991)
+      {
+          clearInterval(stopincreme);
+      }
+  },7);
+
+  var d=0;
+    var stopincrem=setInterval(function()
+  {
+      document.getElementById('four').innerHTML=d;
+      d++;
+
+      if(d==984)
+      {
+          clearInterval(stopincrem);
+      }
+  },5);
+  </script>
+</body>
+</html>
